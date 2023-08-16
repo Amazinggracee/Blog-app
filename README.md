@@ -48,9 +48,22 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 
 ### Key Features <a name="key-features"></a>
 
-- **Show posts**
-- **Comment on posts**
-- **Like posts**
+- We can do CRUD operations on following things:
+
+- Posts
+- Comments
+- Likes
+- Users
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Comming Soon 🎈]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,6 +145,14 @@ To exit server enter “Control (^ )+ C”
 
 - [ ] **Adding Authentication**
 - [ ] **Adding View elements**
+
+> In upcoming weeks I will add some features as mentioned below
+
+- [ ] **Processing data in models.**
+- [ ] **Validations, Model specs, and n+1 problems.**
+- [ ] **Integration specs for Views.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
