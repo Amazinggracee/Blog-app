@@ -7,4 +7,3 @@ class Comment < ApplicationRecord
     post.update(comments_counter: post.comments.all.length)
   end
 end
-
