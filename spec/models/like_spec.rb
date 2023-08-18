@@ -6,7 +6,7 @@ RSpec.describe Like, type: :model do
       # Arrange
       user = User.create(name: 'Sam')
       post = Post.create(title: 'Hello', author: user)
-      like = Like.create(user: user, post: post)
+      like = Like.create(user:, post:)
 
       # Act
       like.like_counter
