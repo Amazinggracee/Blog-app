@@ -48,4 +48,20 @@ RSpec.describe Post, type: :model do
     subject.likes_counter = -1
     expect(subject).to_not be_valid
   end
+
+   it 'should return a users last 5 comment' do
+    user = User.create(name: 'Spencer Okyere', photo: 'Link to photo', bio: 'Hello World', posts_counter: 10)
+    post = Post.create(title: 'Random title', text: 'Hello, world', author: user, likes_counter: 0,
+                       comments_counter: 0)
+
+                      
+      6.times{Comment.create(
+        author: user,
+        post: post,
+        text: 'Test post'
+      )}
+  
+  
+    expect(post.recent_comments.length).to eq(5)
+  end
 end
