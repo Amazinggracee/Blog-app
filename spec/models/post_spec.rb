@@ -49,19 +49,17 @@ RSpec.describe Post, type: :model do
     expect(subject).to_not be_valid
   end
 
-   it 'should return a users last 5 comment' do
-    user = User.create(name: 'Spencer Okyere', photo: 'Link to photo', bio: 'Hello World', posts_counter: 10)
-    post = Post.create(title: 'Random title', text: 'Hello, world', author: user, likes_counter: 0,
-                       comments_counter: 0)
+  it 'should return a users last 5 comment' do
+    user1 = User.create(name: 'Spencer Okyere', photo: 'Link to photo', bio: 'Hello World', posts_counter: 10)
+    post1 = Post.create(title: 'Random title', text: 'Hello, world', author: user1, likes_counter: 0,
+                        comments_counter: 0)
 
-                      
-      6.times{Comment.create(
-        author: user,
-        post: post,
-        text: 'Test post'
-      )}
-  
-  
-    expect(post.recent_comments.length).to eq(5)
+    comment = Comment.create(author: user1, post: post1, text: 'Test Post')
+    comment1 = Comment.create(author: user1, post: post1, text: 'Test Post')
+    comment2 = Comment.create(author: user1, post: post1, text: 'Test Post')
+    comment3 = Comment.create(author: user1, post: post1, text: 'Test Post')
+    comment4 = Comment.create(author: user1, post: post1, text: 'Test Post')
+
+    expect(post1.most_recent_comments.length).to eq(5)
   end
 end
