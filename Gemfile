@@ -6,6 +6,7 @@ ruby '3.2.2'
 # RSpec testing library
 gem 'rspec-rails'
 gem 'rspec-support'
+gem 'shoulda-matchers', '~> 5.0'
 
 # Rubocop linter library
 gem 'rubocop', '>= 1.0', '< 2.0'
