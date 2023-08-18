@@ -55,7 +55,7 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 - Likes
 - Users
 - Processing data in models.
-- Validations, Model specs, and n+1 problems.
+- Validations, Model specs.
 - Integration specs for Views.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
