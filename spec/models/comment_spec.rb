@@ -1,18 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  context 'Tests For #Comment Model' do
-    before :each do
-      @user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-                          bio: 'Teacher from Mexico.')
+  describe '#count_comments' do
+    it 'updates the post comments_counter attribute' do
+      # Arrange
+      user = User.create(name: 'Sam')
+      post = Post.create(title: 'Hello', author: user)
+      comment = Comment.new(author_id: user.id, post: post)  # Use new instead of create
 
-      @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post')
+      # Act
+      comment.save!  # Use save! to trigger the after_save callback
 
-      @comment = Comment.create(post: @post, author: @user, text: 'Hi Tom!')
-    end
-
-    it 'Comments counter will be incremented' do
-      expect(@post.comments_counter).to eq 0
+      # Assert
+      expect(post.reload.comments_counter).to eq(1)
     end
   end
 end

@@ -1,17 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  before :each do
-    @user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.')
+  describe '#likes_counter' do
+    it 'updates the post likes_counter attribute' do
+      # Arrange
+      user = User.create(name: 'Sam')
+      post = Post.create(title: 'Hello', author: user)
+      like = Like.create(user: user, post: post)
 
-    @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post')
+      # Act
+      like.like_counter
 
-    @comment = Comment.create(post: @post, author: @user, text: 'Hi Tom!')
-
-    @like = Like.create(author: @user, post: @post)
-  end
-
-  it 'Comments author should equal to user who made the comment' do
-    expect(@comment.author).to eq @user
+      # Assert
+      expect(post.reload.likes_counter).to eq(1)
+    end
   end
 end
