@@ -62,12 +62,6 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 <!-- LIVE DEMO -->
 
 
-> Add a link to your deployed project.
-
-- [Comming Soon 🎈]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
