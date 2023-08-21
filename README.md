@@ -6,7 +6,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -57,17 +56,11 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 - Processing data in models.
 - Validations, Model specs.
 - Integration specs for Views.
+- controllers
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Comming Soon 🎈]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -144,7 +137,7 @@ To exit server enter “Control (^ )+ C”
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+- [ ] **Controllers specs**
 - [ ] **Adding Authentication**
 - [ ] **Adding View elements**
 
