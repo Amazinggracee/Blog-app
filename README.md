@@ -57,6 +57,7 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 - Processing data in models.
 - Validations, Model specs.
 - Integration specs for Views.
+- controllers
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -144,7 +145,7 @@ To exit server enter “Control (^ )+ C”
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+- [ ] **Controllers specs**
 - [ ] **Adding Authentication**
 - [ ] **Adding View elements**
 
