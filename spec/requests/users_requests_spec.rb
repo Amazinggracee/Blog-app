@@ -19,7 +19,7 @@ describe User, type: :request do
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
       expect(response).to render_template('users/show')
-      expect(response.body).to include("#{@user.name}")
+      expect(response.body).to include(@user.name.to_s)
     end
   end
 end
