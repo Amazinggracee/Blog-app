@@ -138,7 +138,6 @@ To exit server enter “Control (^ )+ C”
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Controllers specs**
 - [ ] **Adding Authentication**
 
 
