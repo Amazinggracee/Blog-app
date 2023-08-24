@@ -1,41 +1,37 @@
-<div class="container">
-  <div class="user-list-item">
-    <div class="user-photo">
-      <% if @user.photo.present? %>
-        <%= image_tag @user.photo %>
-      <% else %>
-        <!-- Display a placeholder image or message -->
-      <% end %>
+<section>
+  <div class="post-container flex">
+    <div class="user-image border">
+      <%= image_tag('man.png',  :width => "100px", :heigth=>"100px") %>
     </div>
-    <div class="user-info">
-      <p class='user-name'><%= @user.name %></p>
-      <p class='posts-counter'>
-        Number of posts: <%= @user.posts_counter %></p>
-    </div>
-  </div>
-  <div class="user-bio">
-    <p class="user-bio-p">Bio</p>
-    <%= @user.bio %>
-  </div>
-  <% @user.recent_posts.each do |post| %>
-    <div class="post-info">
-      <p>Post #<%= post.id %></p>
-      <p><%= link_to post.text, user_post_path(post.author, post.id) %></p>
-      <div class="likes-comments">
-        <p>Comments: <%= post.comments_counter %></p>
-        <p>Likes: <%= post.likes_counter %></p>
+    <div class="user-data border">
+      <h1><%= @user.name %></h1>
+      <p class="numberPost">Number of posts: <%= @user.posts_counter %></p>
+      <div class="right">
+        <%= link_to "See all users", users_path, class: "btn" %>
+        <%= link_to "Add a post", new_user_post_path(@user), class: "btn right" %>
       </div>
     </div>
-  <% end %>
-  <div class="buttons">
-    <%= button_tag(type: 'button', class: 'see-all-posts') do %>
-      <%= link_to user_posts_path(@user) do %>
-        See all posts
+  </div>
+  <div class="post-container left">
+    <h4>Biography:</h4><br>
+    <p><%= @user.bio %></p>
+  </div>
+</section>
+<section>
+  <h1 class="users-title">List of recent Posts</h1>
+  <ul>
+    <% @user.recent_posts.each do |post| %>
+      <%= link_to user_post_path(user_id: post.author_id, id: post.id) do %>
+        <li class="post-container left">
+          <h2><%= post.title%></h2>
+          <p><%= post.text%></p>
+          <div class="right">
+            <span>Comments: <%= post.comments_counter %></span>
+            <span>Likes: <%= post.likes_counter %> </span>
+          </div>
+        </li>
       <% end %>
     <% end %>
-
-    <button class="back-all-users">
-      <%= link_to "Back to all users", root_path %>
-    </button>
-  </div>
-</div>
+  </ul>
+  <%= link_to "See all posts", user_posts_path(user_id: @user.id), class: "btn" %>
+</section>
