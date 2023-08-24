@@ -14,7 +14,7 @@
  *= require_self
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url("https://fonts.googleapis.com/css2?family=Lato");
 
 * {
   box-sizing: border-box;
@@ -38,8 +38,8 @@
   --light: #f1ecea;
   --dark: #00262b;
   --white: #fff;
-  --background:#5225f58f;
-  --lato-font: 'Lato', sans-serif;
+  --background: #5225f58f;
+  --lato-font: "Lato", sans-serif;
 }
 
 body {
@@ -56,8 +56,8 @@ a {
 }
 
 h1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .container {
