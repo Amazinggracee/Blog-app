@@ -28,6 +28,12 @@ node_modules/
 
 /public/assets
 
+/rails generate migration ChangeLikesUserIdToAuthorId
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 # /rails generate scaffold article
+
+<div> 
+  <h1 class="font-bold text-4xl">Likes#create</h1>
+  <p>Find me in app/views/likes/create.html.erb</p>
+</div>
