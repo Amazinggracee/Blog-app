@@ -133,6 +133,12 @@ To exit server enter “Control (^ )+ C”
 - Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
 - LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa)
 
+👤 **David**
+
+- GitHub: [@andrianarivo](https://github.com/andrianarivo)
+- Twitter: [@dandrianarivo](https://twitter.com/dandrianarivo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/andrianarivo)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
