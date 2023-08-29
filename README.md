@@ -127,7 +127,7 @@ To exit server enter “Control (^ )+ C”
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Ayesha Arshad**
+👤
 
 - GitHub: [@amazinggacee](https://github.com/Amazinggracee)
 - Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
