@@ -19,7 +19,6 @@ RSpec.describe 'Posts#alls', type: :system do
     @posts = Post.all
   end
 
-
   it 'I can see the user\'s username.' do
     visit user_posts_path(@tom)
     expect(page).to have_content('Tom')
