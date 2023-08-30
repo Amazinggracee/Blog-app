@@ -33,7 +33,6 @@ RSpec.describe 'Users#index', type: :system do
     end
   end
 
-
   it 'When I click on a user, I am redirected to that user\'s show page.' do
     visit '/users'
     click_link 'Tom'
