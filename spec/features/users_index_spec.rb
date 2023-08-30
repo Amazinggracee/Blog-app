@@ -27,11 +27,11 @@ RSpec.describe 'Users#index', type: :system do
   end
 
   it 'I can see the profile picture for each user.' do
-  visit '/users'
-  @users.each do |user|
-    expect(page).to have_xpath("//img[contains(@src,'https://example.com/Tom-profile.jpg')]")
+    visit '/users'
+    @users.each do |_user|
+      expect(page).to have_xpath("//img[contains(@src,'https://example.com/Tom-profile.jpg')]")
+    end
   end
-end
 
 
   it 'When I click on a user, I am redirected to that user\'s show page.' do

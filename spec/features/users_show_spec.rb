@@ -7,7 +7,8 @@ RSpec.describe 'Users#shows', type: :system do
     User.delete_all
     @tom = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.',
                        posts_counter: 0)
-    @post = Post.create(author: @tom, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+    @post = Post.create(author: @tom, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                        likes_counter: 0)
     @lilly = User.create(name: 'Lilly', photo: 'https://placehold.co/200x133', bio: 'Teacher from Poland.',
                          posts_counter: 0)
     @users = User.all
@@ -35,7 +36,7 @@ RSpec.describe 'Users#shows', type: :system do
 
   it 'I can see the user\'s first 3 posts.' do
     visit "/users/#{@tom.id}"
-     expect(page).to have_content(@post.title)
+    expect(page).to have_content(@post.title)
   end
 
   it 'I can see a button that lets me view all of a user\'s posts.' do
