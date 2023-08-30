@@ -58,6 +58,7 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 - Integration specs for Views.
 - controllers spec.
 - Adding View elements.
+- N+1.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
