@@ -52,4 +52,9 @@ RSpec.describe 'Posts#details', type: :system do
       expect(page).to have_content(comment.text)
     end
   end
+
+  it 'I can see how many comments it has.' do
+    visit user_post_path(@tom, @first_post)
+    expect(page).to have_content("Comments: #{Comment.where(post: @first_post).count}")
+  end
 end

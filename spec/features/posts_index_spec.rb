@@ -24,6 +24,11 @@ RSpec.describe 'Posts#alls', type: :system do
     expect(page).to have_content('Tom')
   end
 
+  it "I can see the user's profile picture." do
+    visit user_posts_path(@tom)
+    expect(page).to have_selector("img[src='https://example.com/Tom-profile.jpg']")
+  end
+
   it 'I can see the number of posts the user has written.' do
     visit user_posts_path(@tom)
     expect(page).to have_content('Number of posts: 1')
