@@ -14,6 +14,10 @@ class User < ApplicationRecord
     posts_counter || 0
   end
 
+  def recent_posts
+    posts.order(created_at: :desc).limit(10) # Adjust the limit as needed
+  end
+
   def three_recent_posts
     posts.order(created_at: :desc).limit(3)
   end
