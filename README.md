@@ -58,6 +58,7 @@ The **Blog** is app is a classic example of a blog website. It's a fully functio
 - Integration specs for Views.
 - controllers spec.
 - Adding View elements.
+- N+1.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -127,11 +128,17 @@ To exit server enter “Control (^ )+ C”
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Ayesha Arshad**
+👤
 
 - GitHub: [@amazinggacee](https://github.com/Amazinggracee)
 - Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
 - LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa)
+
+👤 **David**
+
+- GitHub: [@andrianarivo](https://github.com/andrianarivo)
+- Twitter: [@dandrianarivo](https://twitter.com/dandrianarivo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/andrianarivo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
