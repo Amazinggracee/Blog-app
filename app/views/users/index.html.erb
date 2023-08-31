@@ -5,7 +5,11 @@
         <%= link_to user do %>
           <li class="post-container flex hover">
             <div class="user-image border">
-              <%= image_tag(user.photo,  :width => "100px", :heigth=>"100px") %>
+              <% if user.photo.present? %>
+                <%= image_tag(user.photo, width: "100px", height: "100px") %>
+                <% else %>
+                  <%= image_tag('man.png', width: "100px", height: "100px") %>
+              <% end %>
             </div>
             <div class="user-data border">
               <h1><%= user.name %></h1>
