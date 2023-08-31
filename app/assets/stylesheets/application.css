@@ -150,3 +150,7 @@ h1 {
 .commets-container {
   padding: 10px;
 }
+
+.container-fluid {
+  text-align: center;
+}
