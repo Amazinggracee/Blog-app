@@ -34,9 +34,9 @@ class CommentsController < ApplicationController
     @post = Post.find_by(id: params[:post_id])
 
     # Check if the post with the given ID exists
-    if @post.nil?
-      flash[:alert] = 'Post not found'
-      redirect_to root_path
-    end
+    return unless @post.nil?
+
+    flash[:alert] = 'Post not found'
+    redirect_to root_path
   end
 end
